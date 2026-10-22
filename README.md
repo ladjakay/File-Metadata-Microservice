@@ -1,3 +1,18 @@
 # File Metadata Microservice
 
-This is the boilerplate for the File Metadata Microservice project. Instructions for building your project can be found at https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/file-metadata-microservice
+Upload a file using the form on the home page or send a `multipart/form-data`
+`POST` request to `/api/fileanalyse` with the file field named `upfile`.
+
+The API responds with the uploaded file's original name, MIME type, and size in
+bytes:
+
+```json
+{
+  "name": "example.txt",
+  "type": "text/plain",
+  "size": 12
+}
+```
+
+Start the service with `npm start`. It listens on port `3000` by default; set
+`PORT` to use a different port.

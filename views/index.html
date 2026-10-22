@@ -14,12 +14,12 @@
 
         <h2>Usage:</h2>
         <p>
-          Please Upload a File ...
+          Choose a file to see its name, MIME type, and size in bytes.
         </p>
         <div class="view">
-          <h3 id="output"></h3>
           <form enctype="multipart/form-data" method="POST" action="/api/fileanalyse">
-            <input id="inputfield" type="file" name="upfile">
+            <label for="inputfield">File to upload</label>
+            <input id="inputfield" type="file" name="upfile" required>
             <input id="button" type="submit" value="Upload">
           </form>
         </div>
